@@ -1,8 +1,3 @@
-import argparse
-import pyautogui
-import time
-import os
-from PIL import ImageGrab
 """
 Author: Jaqsparow
 Purpose: Script to keep your system alive. It takes one argument i.e number of minutes system is to be active 
@@ -12,6 +7,11 @@ example to keep a system active for 30 minutes: keep_your_system_alive.py -t 30
 example to keep a system active for 1 hour and then turn off the PC: keep_your_system_alive.py -t 60 -a s
 example to keep a system  active for 2 hours and then restart it: keep_your_system_alive.py -t 120 -a r
 """
+import argparse
+import pyautogui
+import time
+import os
+from PIL import ImageGrab
 
 def timer(n, action):
     counter = 0
